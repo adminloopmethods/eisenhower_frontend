@@ -1,0 +1,97 @@
+@import "../../assets/scss/global.scss";
+@import "../../assets/scss/helpers/fonts.scss";
+
+%bg-custom {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: bottom !important;
+    border-radius: 10px;
+    p,
+    span {
+        color: $white-color;
+    }
+}
+.total-tasks {
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    line-height: 1.2;
+    font-size: 30px;
+    font-weight: 700;
+    color: $white-color;
+    text-shadow: 2px 2px 6px #00000040;
+    span {
+        font-family: $regular-font;
+        font-size: 10px;
+        font-weight: 300;
+        line-height: 12px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+}
+
+.block-bg-1 {
+    background: url(../../assets/images/giant-wave.svg), #368c89;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border-radius: 10px;
+    p,
+    span {
+        color: $white-color;
+        text-shadow: 0px 0.1px #5b5b5b;
+    }
+}
+.main-dashboard{
+    .card-head-text{
+        font-size: 16px;
+        font-weight: 500;
+        color: $white-color;
+    }
+}
+.block-bg-2 {
+    @extend %bg-custom;
+    background: url(../../assets/images/mini-wave.svg), #4eafac;
+}
+
+.block-bg-3 {
+    background: url(../../assets/images/mini-wave.svg), #4eafac;
+    @extend %bg-custom;
+}
+
+.block-bg-4 {
+    background: url(../../assets/images/mini-wave.svg), #ebb050;
+    @extend %bg-custom;
+}
+.block-bg-5 {
+    background: url(../../assets/images/mini-wave.svg), #ebb050;
+    @extend %bg-custom;
+}
+.block-bg-6 {
+    background: url(../../assets/images/mini-wave.svg), #db8b3c;
+    @extend %bg-custom;
+}
+.block-bg-7 {
+    background: url(../../assets/images/mini-wave.svg), #db8b3c;
+    @extend %bg-custom;
+}
+.block-bg-8 {
+    background: url(../../assets/images/mini-wave.svg), #ae4e0c;
+    @extend %bg-custom;
+}
+.block-bg-9 {
+    background: url(../../assets/images/mini-wave.svg), #ae4e0c;
+    @extend %bg-custom;
+}
+@media (max-width:576px) {
+    .task-dashboard{
+        .ant-card-body{
+            padding: 12px;
+        }
+    }
+}
+@media (min-width:577px) {
+      .ant-card-body{
+        padding: 20px;
+    }
+}

@@ -1,0 +1,59 @@
+@import "../../assets//scss/helpers/fonts";
+@import "../../assets//scss/helpers/colors";
+
+.ant-layout-sider {
+  background: $white-color;
+
+  li .ant-menu-title-content {
+    font-family: $heading-font;
+    font-weight: 600;
+    a {
+      color: $main-color;
+    }
+  }
+  .ant-menu-item {
+    svg {
+      color: $main-color;
+      height: 18px;
+      width: 18px;
+    }
+    &:hover span {
+      color: $main-color;
+    }
+  }
+}
+.ant-menu-inline {
+  height: 100vh;
+}
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: #3b8c8930;
+  color: #3b8c89;
+}
+.ant-menu-item-selected,
+.ant-menu-item-selected a,
+.ant-menu-item-selected a:hover {
+  color: #3b8c89;
+}
+.ant-menu-inline .ant-menu-item:after {
+  border-right: 3px solid #3b8c89;
+}
+@media (max-width: 768px) {
+  .ant-layout-sider {
+    min-width: 310px !important;
+  }
+  .mobile-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 12px 12px 0;
+    right: 0;
+    box-shadow: 10px 8px 24px grey;
+  }
+}
+@media (min-width: 769px) {
+  .ant-layout-sider {
+    min-width: 300px !important;
+  }
+}

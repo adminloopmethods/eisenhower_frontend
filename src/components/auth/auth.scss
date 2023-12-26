@@ -1,0 +1,22 @@
+@import "../../assets/scss/helpers/colors";
+@import "../../assets/scss/helpers/fonts";
+
+.login-page {
+    .login-wave {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+    // .login-form {
+    //     .ant-form-item-control-input-content {
+    //         max-width: 390px;
+    //         min-width: 330px;
+    //     }
+    // }
+    .ant-input-affix-wrapper{
+        padding: 0 11px;
+        border-radius: 6px !important;
+    }
+}
